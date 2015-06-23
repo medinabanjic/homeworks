@@ -1,0 +1,20 @@
+package ba.bitcamp.homework03.task01;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		char[] letters = new char[30];
+		String word = "golub";
+		Object ob = "golubica";
+
+		for (int i = 0; i < word.length(); i++) {
+			letters[i] = word.charAt(i);
+		}
+
+		CampStringBuilder cs = new CampStringBuilder(letters);
+		cs.append(ob);
+
+	}
+
+}
