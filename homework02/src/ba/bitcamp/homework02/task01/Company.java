@@ -63,10 +63,13 @@ public class Company {
 	 * @param sum
 	 */
 	public void addSalary(int sum) {
+
+		int sum2 = 0;
 		for (int i = 0; i < workers.length; i++) {
-			sum = workers[i].getMonthSalary() + sum;
-			workers[i].setMonthSalary(sum);
+			sum2 = workers[i].getMonthSalary() + sum;
+			workers[i].setMonthSalary(sum2);
 		}
+
 	}
 
 	/**
