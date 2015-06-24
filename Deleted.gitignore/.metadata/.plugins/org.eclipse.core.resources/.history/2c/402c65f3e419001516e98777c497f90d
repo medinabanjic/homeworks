@@ -1,0 +1,29 @@
+package ba.bitcamp.homework03.task01;
+
+public class Event {
+	//initializing static final variables that defines kind of event
+		public static final String DEFEAT = "Defeat";
+		public static final String FRIENDSHIP = "Friendship";
+		public static final String LOVE = "Love";
+		public static final String REVENGE = "Revenge";
+		public static final String MANIPULATION = "Manipulation";
+		
+		private String event;
+		
+		public Event(String event) {
+			this.event = event;
+		}
+
+		public String getEvent() {	
+			return event;
+		}
+
+		@Override
+		public String toString() {
+			return  event;
+		}
+		
+		
+		
+		
+}
