@@ -30,6 +30,8 @@ f. Sadrži metodu koja pretvara nesposobnog lika u sposobnog
 
 g. Konstruktor koji inicijalizira ime, spol karaktera i sposobnost karaktera
 
+
+
 **Zadatak 2**
 
 Napisati dvije klase:
@@ -62,7 +64,9 @@ d. Sadrži atribut koji opisuje kome ili sa kim (Character) se treba desiti dogað
 
 e. Sadrži konstruktor koji inicijalizira tri pomenuta atributa, kao i ime cilja
 
-Zadatak 3
+
+
+**Zadatak 3**
 
 Napisati klasu:
 
@@ -86,7 +90,9 @@ g. Sadrži metodu koja doda jednog lika koji æe pomoæi glavnom liku
 
 i. Pomenuta metoda se može samo èetiri puta pozvati (peti throw-a exception) 
 
-Zadatak 4
+
+
+**Zadatak 4**
 
 Napisati metodu:
 
@@ -126,6 +132,8 @@ ii. Neuspjeh:
 
 3. Napraviti jednog lika (nasumièno izabranog) sposobnim (ako nije bio)
 
-Zadatak 5
+
+
+**Zadatak 5**
 
 Napraviti prièu u main metodi pomoæu navedenih klasa!

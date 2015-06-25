@@ -28,23 +28,19 @@ public class Character extends StoryElement {
 	 * false
 	 */
 	public void killCharacter() {
-		if (isAlive == true) {
 			isAlive = false;
 			isCapable = false;
-		}
 	}
 
 	/**
 	 * Turns isCapale to true if it was false, character has to be alive
 	 */
 	public void improveCapability() {
-		if (isCapable == false && isAlive == true) {
+		if (isAlive) {
 			isCapable = true;
-		} else if (isAlive == false) {
-			System.out.println("Dead!");
 		} else {
-			System.out.println("Capable already!");
-		}
+			System.out.println("Dead!");
+		} 
 	}
 
 	/**

@@ -27,6 +27,7 @@ public class StoryTest {
 		// he could help as we work the best when three of us work together.
 		// He accepted.
 		p1.addHelper(c2);
+		p1.addHelper(c1);
 
 		// This improved my thinking speed. I was capable of destroying this
 		// code.

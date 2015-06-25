@@ -2,12 +2,12 @@ package ba.bitcamp.homework03.task01;
 
 public class Protagonist extends Character {
 
-	public static int NUM_OF_HELPERS = 0;
-	public static int MAX_NUM_OF_HELPERS = 3;
+	public static final int MAX_NUM_OF_HELPERS = 3;
 
 	private Goal mainGoal;
 	private Character[] helpers;
 	private Character enemy;
+	private int numOfHelpers = 0;
 
 	public Protagonist(String name, String gender, boolean isCapable,
 			Goal mainGoal) {
@@ -17,8 +17,8 @@ public class Protagonist extends Character {
 
 	}
 
-	public void getIsAlive() {
-		this.isAlive = true;
+	public boolean getIsAlive() {
+		return this.isAlive;
 	}
 
 	/**
@@ -39,17 +39,13 @@ public class Protagonist extends Character {
 	public void addHelper(Character helper)
 			throws ArrayIndexOutOfBoundsException {
 
-		if (NUM_OF_HELPERS == helpers.length) {
+		if (numOfHelpers == helpers.length) {
 			throw new ArrayIndexOutOfBoundsException();
-		} else if (NUM_OF_HELPERS < helpers.length) {
-			for (int i = 0; i < helpers.length; i++) {
-				if (helpers[i] == null) {
-					helpers[i] = helper;
-					break;
-				}
-			}
-			NUM_OF_HELPERS++;
+		} else if (numOfHelpers < helpers.length) {
+			helpers[helpers.length - 1] = helper;
+			numOfHelpers++;
 		}
+
 	}
 
 	/**
@@ -58,24 +54,24 @@ public class Protagonist extends Character {
 	public void accomplishGoal() {
 		int success = 0;
 		// checks if the character is alive
-		if (this.isAlive == false) {
+		if (!(isAlive)) {
 			System.out.println("Dead!");
 		} else {
 
 			// checks is it capable
-			if (this.getIsCapable() == true) {
+			if (this.getIsCapable()) {
 				success += 40;
 			}
 
 			// checks for each helper capability
 			for (int i = 0; i < helpers.length; i++) {
-				if (helpers[i] != null && helpers[i].getIsCapable() == true) {
+				if (helpers[i] != null && helpers[i].getIsCapable()) {
 					success += 20;
 				}
 			}
 
 			// checks if enemy is capable
-			if (enemy.getIsCapable() == true) {
+			if (enemy.getIsCapable()) {
 				success -= 30;
 			}
 
@@ -98,14 +94,15 @@ public class Protagonist extends Character {
 			if (success >= 50) {
 				System.out.printf("Protagonist has succeed at his goal: %s",
 						mainGoal.getGoalName());
-				helpers[(int) (Math.random() * NUM_OF_HELPERS + 1)]
+				helpers[(int) (Math.random() * numOfHelpers + 1)]
 						.improveCapability();
 			} else if (success < 50) {
 				System.out.printf(
 						"Protagonist has not succeed at his goal: %s",
 						mainGoal.getGoalName());
-				helpers[(int) (Math.random() * NUM_OF_HELPERS)].killCharacter();
-				helpers[(int) (Math.random() * NUM_OF_HELPERS)]
+				helpers[(int) (Math.random() * (numOfHelpers + 2) - 1)]
+						.killCharacter();
+				helpers[(int) (Math.random() * (numOfHelpers + 2) - 1)]
 						.improveCapability();
 			}
 
