@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Peopling</string>
+    <string name="app_title">Add a person</string>
+    <string name="placeholder_name">Name</string>
+    <string name="placeholder_surname">Surname</string>
+    <string name="add_button">Add</string>
+    <string name="remove_button">Delete person from the list</string>
+    <string name="edit_button">Edit person info</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_surname">Sort by surname</string>
+    <string name="edit_person">Edit person</string>
+</resources>

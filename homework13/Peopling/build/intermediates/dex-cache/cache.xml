@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/banjic/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/banjic/Desktop/Peopling/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-984bb2746b71e69da65aabcf0793b47d1470c1bb.jar" />
+    </item>
+    <item
+        jar="/Users/banjic/Desktop/Peopling/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/banjic/Desktop/Peopling/app/build/intermediates/pre-dexed/debug/classes-6196b7cbd0694aca9cdbe6df7306de5b974738ad.jar" />
+    </item>
+    <item
+        jar="/Users/banjic/Desktop/Peopling/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/banjic/Desktop/Peopling/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-9e77a64754400127e5b79101eca0fcb1528a507b.jar" />
+    </item>
+    <item
+        jar="/Users/banjic/Desktop/Peopling/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/banjic/Desktop/Peopling/app/build/intermediates/pre-dexed/debug/classes-d07b04218f4b1dcbc2a3e0538dcc47636a8b3cd6.jar" />
+    </item>
+    <item
+        jar="/Users/banjic/Desktop/Peopling/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/banjic/Desktop/Peopling/app/build/intermediates/pre-dexed/debug/classes-9ec5d028898a3c0b37bb3f25e8e5afd259397d51.jar" />
+    </item>
+
+</items>
